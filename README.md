@@ -15,9 +15,7 @@ https://www.dropbox.com/developers/
 
 http://apps.camilolopes.com.br/dpboxapiweb/
 
-###The project the generate token online 
-
-Follow these steps : https://github.com/ITSStartup/dpboxapiweb
+fork me!!! 
 
 
 
