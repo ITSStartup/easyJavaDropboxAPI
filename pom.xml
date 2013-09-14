@@ -14,6 +14,40 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
+			<!-- Plugin for GITHUB -->
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>site-maven-plugin</artifactId>
+				<version>0.8</version>
+				<configuration>
+					<message>Maven artifacts for ${project.version}</message>
+					<noJekyll>true</noJekyll>
+					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+					<branch>refs/heads/mvn-repo</branch>
+					<includes>
+						<include>**/*</include>
+					</includes>
+					<repositoryName>easyJavaDropboxAPI</repositoryName>
+					<repositoryOwner>ITSStartup</repositoryOwner>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>site</goal>
+						</goals>
+						<phase>deploy</phase>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- Deploy Plugin -->
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 	<dependencies>
@@ -24,14 +58,12 @@
 		</dependency>
 	</dependencies>
 	<url>https://github.com/ITSStartup/easyJavaDropboxAPI</url>
-	<name>easyJavaDropboxAPI</name>
-	<groupId>com.its.easyjavadropbox.api</groupId>
-	
+	<name>EasyJavaDropboxAPI</name>
+	<groupId>com.its.api</groupId>
+
 	<properties>
-		<!-- github server corresponds to entry in ~/.m2/settings.xml -->
-		<github.global.server>github</github.global.server>
+		<github.global.server>githubITS</github.global.server>
 	</properties>
-	<!-- Finally, tell the site plugin where the artifact has been deployed -->
 	<distributionManagement>
 		<repository>
 			<id>githubITS</id>
