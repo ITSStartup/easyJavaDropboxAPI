@@ -1,4 +1,4 @@
-It is an API for use Dropbox feature using Dropbox API.  
+####It is an API for use Dropbox feature using [Dropbox API] (https://www.dropbox.com/developers/).  
 
 Dropbox API Documentation 
 
@@ -16,9 +16,9 @@ https://www.dropbox.com/developers/
 http://apps.camilolopes.com.br/dpboxapiweb/
 
 The project the generate token online 
+
 Follow these steps : https://github.com/ITSStartup/dpboxapiweb
 
-Details about Dropbox API works check om Developer Guide Page
-https://www.dropbox.com/developers/reference/devguide
+
 
 
