@@ -1,4 +1,4 @@
-It is internal API for use DropBox feature for Enterprise Application. 
+It is an API for use Dropbox feature using Dropbox API.  
 
 ###How to use?
 
