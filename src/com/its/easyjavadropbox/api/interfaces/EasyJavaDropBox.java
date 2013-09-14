@@ -1,4 +1,4 @@
-package com.its.easydropbox.api.interfaces;
+package com.its.easyjavadropbox.api.interfaces;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import com.dropbox.core.DbxEntry.File;
 import com.dropbox.core.DbxEntry.WithChildren;
 import com.dropbox.core.DbxException;
 
-public interface EasyDropBox {
+public interface EasyJavaDropBox {
 	/**
 	 * 
 	 * @return all files for dropboxPath

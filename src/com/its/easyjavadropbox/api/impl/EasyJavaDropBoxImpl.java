@@ -1,4 +1,4 @@
-package com.its.easydropbox.api.impl;
+package com.its.easyjavadropbox.api.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +10,9 @@ import com.dropbox.core.DbxEntry.File;
 import com.dropbox.core.DbxEntry.WithChildren;
 import com.dropbox.core.DbxException;
 import com.dropbox.core.DbxRequestConfig;
-import com.its.easydropbox.api.interfaces.EasyDropBox;
+import com.its.easyjavadropbox.api.interfaces.EasyJavaDropBox;
 
-public class EasyDropBoxImpl implements EasyDropBox{
+public class EasyJavaDropBoxImpl implements EasyJavaDropBox{
 	private String root = "/";
 	private String dropboxPath = root;
 	private DbxRequestConfig config;
@@ -20,7 +20,7 @@ public class EasyDropBoxImpl implements EasyDropBox{
 	private DbxClient client;
 	
 
-	public EasyDropBoxImpl(String dropboxPath,String token) {
+	public EasyJavaDropBoxImpl(String dropboxPath,String token) {
 		this.dropboxPath = dropboxPath;
 		config = new DbxRequestConfig("JavaTutorial/1.0",	Locale.getDefault().toString());
 		client = new DbxClient(config, token);
