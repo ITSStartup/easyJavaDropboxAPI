@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>dropboxapi</groupId>
   <artifactId>dropboxapi</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -24,4 +24,6 @@
   		<version>1.7.2</version>
   	</dependency>
   </dependencies>
+  <name>DropBoxApi</name>
+  <url>https://www.dropbox.com/developers/reference/devguide</url>
 </project>
