@@ -1,20 +1,20 @@
-####It is an API for use Dropbox feature using [Dropbox API] (https://www.dropbox.com/developers/).  
+###It is an API for use Dropbox feature using [Dropbox API] (https://www.dropbox.com/developers/).  
 
-####Dropbox API Documentation 
+###Dropbox API Documentation 
 
 http://dropbox.github.io/dropbox-sdk-java/api-docs/v1.7.x/
 
 
 https://www.dropbox.com/developers/
 
-####easyJavaDropboxAPI's features 
+###easyJavaDropboxAPI's features 
 
 * list all files easily **listFiles()**
 * change of folder with **changeDropboxPath(String newpath)**
 * get all feature dropbox api **getClient()**
 * search a file in your dropbox **searchFile(String basePath, String query)**
 
-####Download example using Java Application 
+###Download example using Java Application 
 
 * [easyJavaDropboxAPIExample] (https://github.com/ITSStartup/easyJavaDropboxAPIExample)
 
