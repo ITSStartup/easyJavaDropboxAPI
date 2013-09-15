@@ -14,6 +14,9 @@ https://www.dropbox.com/developers/
 * get all feature dropbox api **getClient()**
 * search a file in your dropbox **searchFile(String basePath, String query)**
 
+####download example using Java Application 
+
+* [easyJavaDropboxAPIExample] (https://github.com/ITSStartup/easyJavaDropboxAPIExample)
 
 ###Before use
 
