@@ -1,5 +1,7 @@
 package com.its.easyjavadropbox.api.impl;
 
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -9,6 +11,8 @@ import com.dropbox.core.DbxEntry;
 import com.dropbox.core.DbxEntry.WithChildren;
 import com.dropbox.core.DbxException;
 import com.dropbox.core.DbxRequestConfig;
+import com.dropbox.core.DbxThumbnailFormat;
+import com.dropbox.core.DbxThumbnailSize;
 import com.its.easyjavadropbox.api.interfaces.EasyJavaDropBoxService;
 
 public class EasyJavaDropBoxServiceImpl implements EasyJavaDropBoxService{
@@ -50,6 +54,14 @@ public class EasyJavaDropBoxServiceImpl implements EasyJavaDropBoxService{
 
 	public DbxClient getClient() {
 		return client;
+	}
+
+	@Override
+	public void writeThumbnail(String ident, int width, int height,String fileName, OutputStream outputStream) throws DbxException, IOException {
+		DbxThumbnailSize size = new DbxThumbnailSize(ident, width,height);
+		DbxThumbnailFormat format = DbxThumbnailFormat.bestForFileName(fileName, null);
+		client.getThumbnail(size, format, dropboxPath + fileName, null, outputStream);
+		
 	}
 
 }
