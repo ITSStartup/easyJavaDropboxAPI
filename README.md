@@ -17,6 +17,37 @@ http://apps.camilolopes.com.br/dpboxapiweb/
 
 ###Setup in your Java Project
 
+####Maven Project
+* open pom.xml 
+* add the repository below
+```java
+<repositories>
+  <repository>
+        <id>easyJavaDropboxAPI</id>
+        <url>https://raw.github.com/ITSStartup/easyJavaDropboxAPI/mvn-repo</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+</repositories>
+```
+
+* add the dependency 
+```java
+<dependencies>
+		<dependency>
+			<groupId>com.its.api</groupId>
+			<artifactId>easyJavaDropboxAPI</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+	```
+	
+
+
+
+
 fork me!!! 
 
 
