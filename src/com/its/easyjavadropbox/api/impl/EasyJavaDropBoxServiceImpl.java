@@ -6,13 +6,12 @@ import java.util.Locale;
 
 import com.dropbox.core.DbxClient;
 import com.dropbox.core.DbxEntry;
-import com.dropbox.core.DbxEntry.File;
 import com.dropbox.core.DbxEntry.WithChildren;
 import com.dropbox.core.DbxException;
 import com.dropbox.core.DbxRequestConfig;
-import com.its.easyjavadropbox.api.interfaces.EasyJavaDropBox;
+import com.its.easyjavadropbox.api.interfaces.EasyJavaDropBoxService;
 
-public class EasyJavaDropBoxImpl implements EasyJavaDropBox{
+public class EasyJavaDropBoxServiceImpl implements EasyJavaDropBoxService{
 	private String root = "/";
 	private String dropboxPath = root;
 	private DbxRequestConfig config;
@@ -20,9 +19,9 @@ public class EasyJavaDropBoxImpl implements EasyJavaDropBox{
 	private DbxClient client;
 	
 
-	public EasyJavaDropBoxImpl(String dropboxPath,String token) {
+	public EasyJavaDropBoxServiceImpl(String dropboxPath,String token) {
 		this.dropboxPath = dropboxPath;
-		config = new DbxRequestConfig("JavaTutorial/1.0",	Locale.getDefault().toString());
+		config = new DbxRequestConfig("ITS/1.0",Locale.getDefault().toString());
 		client = new DbxClient(config, token);
 	}
 	
@@ -49,12 +48,6 @@ public class EasyJavaDropBoxImpl implements EasyJavaDropBox{
 		return  listFiles.children;
 	}
 
-	@Override
-	public File getFile() {
-		
-		return null;
-	}
-	
 	public DbxClient getClient() {
 		return client;
 	}
