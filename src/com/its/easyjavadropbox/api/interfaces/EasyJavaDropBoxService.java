@@ -1,5 +1,7 @@
 package com.its.easyjavadropbox.api.interfaces;
 
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.List;
 
 import com.dropbox.core.DbxClient;
@@ -41,5 +43,16 @@ public interface EasyJavaDropBoxService {
 	 * e.g: /nameOfFolder
 	 */
 	void changeDropboxPath(String newpath);
+	/**
+	 * 
+	 * @param ident inform xs, s, m ,l , xl
+	 * @param fileName 
+	 * @param width
+	 * @param height
+	 * @param outputStream
+	 * @throws IOException 
+	 * @throws DbxException 
+	 */
+	public void writeThumbnail(String ident, int width, int height,String fileName, OutputStream outputStream) throws DbxException, IOException;
 
 }
