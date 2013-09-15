@@ -1,4 +1,4 @@
-###It is an API for use Dropbox feature using [Dropbox API] (https://www.dropbox.com/developers/).  
+###It is an API for Dropbox's feature using [Dropbox API] (https://www.dropbox.com/developers/).  
 
 ###Dropbox API Documentation 
 
