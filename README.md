@@ -14,17 +14,17 @@ https://www.dropbox.com/developers/
 * get all feature dropbox api **getClient()**
 * search a file in your dropbox **searchFile(String basePath, String query)**
 
-####download example using Java Application 
+####Download example using Java Application 
 
 * [easyJavaDropboxAPIExample] (https://github.com/ITSStartup/easyJavaDropboxAPIExample)
 
 ###Before use
 
-1. You only need to generate a token for app. We have developed a web app for this objective, check the following:
+1. You only need to generate a token for app. We have developed a web app for this objective check the following:
 
 ###Generate Token Live
 
-http://apps.camilolopes.com.br/dpboxapiweb/
+[DropboxAPIWeb - Generate Token](http://apps.camilolopes.com.br/dpboxapiweb/)
 
 ###Setup in your Java Project
 
@@ -58,7 +58,6 @@ http://apps.camilolopes.com.br/dpboxapiweb/
 ###Download .jar 
 * Version 1.0.0 [Click here] (https://github.com/ITSStartup/easyJavaDropboxAPI/blob/mvn-repo/com/its/api/easyJavaDropboxAPI/1.0.0/easyJavaDropboxAPI-1.0.0.jar?raw=true)
 * [Others Version] (https://github.com/ITSStartup/easyJavaDropboxAPI/tree/mvn-repo/com/its/api/easyJavaDropboxAPI)
-
 
 
 fork me!!! 
