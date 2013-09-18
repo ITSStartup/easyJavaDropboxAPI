@@ -1,13 +1,18 @@
 ###It is an API for Dropbox's feature using [Dropbox API] (https://www.dropbox.com/developers/).  
 
 ###Dropbox API Documentation 
+---------------------
 
 http://dropbox.github.io/dropbox-sdk-java/api-docs/v1.7.x/
 
 
 https://www.dropbox.com/developers/
 
-###easyJavaDropboxAPI's features 
+###Introduction easyJavaDropboxAPI
+--------------------
+
+
+###Features
 
 * list all files easily **listFiles()**
 * change of folder with **changeDropboxPath(String newpath)**
@@ -60,7 +65,7 @@ https://www.dropbox.com/developers/
 * [Others Version] (https://github.com/ITSStartup/easyJavaDropboxAPI/tree/mvn-repo/com/its/api/easyJavaDropboxAPI)
 
 
-fork me!!! 
+fork me and enjoy!!!
 
 
 
