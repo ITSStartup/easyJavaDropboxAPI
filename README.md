@@ -64,9 +64,9 @@ This API has objective to help Java developers to use Dropbox API easily.
 		</dependency>
 	</dependencies>
 	```
-	
-###Download .jar 
 --------------------
+
+###Download .jar 
 
 * Version 1.0.0 [Click here] (https://github.com/ITSStartup/easyJavaDropboxAPI/blob/mvn-repo/com/its/api/easyJavaDropboxAPI/1.0.0/easyJavaDropboxAPI-1.0.0.jar?raw=true)
 * [Others Version] (https://github.com/ITSStartup/easyJavaDropboxAPI/tree/mvn-repo/com/its/api/easyJavaDropboxAPI)
