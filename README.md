@@ -41,6 +41,7 @@ This API has objective to help Java developers to use Dropbox API easily.
 ####Maven Project
 * open pom.xml 
 * add the repository below
+
 ```java
 <repositories>
   <repository>
@@ -55,7 +56,8 @@ This API has objective to help Java developers to use Dropbox API easily.
 ```
 
 * add the dependency 
-```java
+
+```xml
 <dependencies>
 		<dependency>
 			<groupId>com.its.api</groupId>
@@ -63,8 +65,8 @@ This API has objective to help Java developers to use Dropbox API easily.
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
-	```
---------------------
+```
+
 
 ### Download .jar 
 
