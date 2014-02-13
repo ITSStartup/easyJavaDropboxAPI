@@ -1,7 +1,6 @@
 package com.its.easyjavadropbox.api.interfaces;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
 
@@ -56,14 +55,7 @@ public interface EasyJavaDropBoxService {
 	 */
 	public void writeThumbnail(String ident, int width, int height,String fileName, OutputStream outputStream) throws DbxException, IOException;
 	
-	/**
-	 * 
-	 * @param finalName inform finalName of the file e.g: myphoto.png
-	 * @param inputStreamContent  content Stream of file 
-	 * @throws DbxException
-	 * @throws IOException
-	 */
-	public void saveToDropbox(String finalName,InputStream inputStreamContent) throws DbxException,IOException;
+	
 	
 
 }
