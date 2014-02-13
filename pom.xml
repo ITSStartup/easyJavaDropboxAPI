@@ -28,6 +28,8 @@
 					</includes>
 					<repositoryName>easyJavaDropboxAPI</repositoryName>
 					<repositoryOwner>ITSStartup</repositoryOwner>
+					<!-- ITS IMPORTANT, BECAUSE AVOID OVERRIDE LAST VERSION -->
+					<merge>true</merge>
 				</configuration>
 				<executions>
 					<execution>
