@@ -91,8 +91,8 @@ Features
 - get all feature dropbox api getClient()
 - search a file in your dropbox searchFile(String basePath, String query)</description>
 	<scm>
-		<url>git@github.com:ITSStartup/easyJavaDropboxAPI.git</url>
-		<connection>git@github.com:ITSStartup/easyJavaDropboxAPI.git</connection>
-		<developerConnection>git@github.com:ITSStartup/easyJavaDropboxAPI.git</developerConnection>
+		<url>scm:git:git@github.com:ITSStartup/easyJavaDropboxAPI.git</url>
+		<connection>scm:git:git@github.com:ITSStartup/easyJavaDropboxAPI.git</connection>
+		<developerConnection>scm:git:git@github.com:ITSStartup/easyJavaDropboxAPI.git</developerConnection>
 	</scm>
 </project>
