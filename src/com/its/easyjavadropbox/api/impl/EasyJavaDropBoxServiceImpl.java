@@ -81,8 +81,7 @@ public class EasyJavaDropBoxServiceImpl implements EasyJavaDropBoxService{
 	}
 
 	@Override
-	public void saveToDropbox(String finalName, InputStream inputStreamContent)
-			throws DbxException, IOException {
+	public void saveToDropbox(String finalName, InputStream inputStreamContent)	throws DbxException, IOException {
 		final int numBytesUndefined = -1;
 		String finalNamePathFull = dropboxPath + finalName;
 		client.uploadFile(finalNamePathFull, DbxWriteMode.add(), numBytesUndefined,	inputStreamContent);
