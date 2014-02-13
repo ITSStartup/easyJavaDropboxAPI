@@ -83,7 +83,7 @@
 
 	<description>This API has objective to help Java developers to use Dropbox API easily.
 
-Features
+Some Features:
 
 - list all files easily listFiles()
 - change of folder with changeDropboxPath(String newpath)
@@ -93,6 +93,6 @@ Features
 		<url>scm:git:git@github.com:ITSStartup/easyJavaDropboxAPI.git</url>
 		<connection>scm:git:git@github.com:ITSStartup/easyJavaDropboxAPI.git</connection>
 		<developerConnection>scm:git:git@github.com:ITSStartup/easyJavaDropboxAPI.git</developerConnection>
-		<tag>easyJavaDropboxAPI-1.0.0</tag>
+		<tag>v1.1.0</tag>
 	</scm>
 </project>
