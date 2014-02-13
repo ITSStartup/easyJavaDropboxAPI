@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>easyJavaDropboxAPI</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -72,4 +72,12 @@
 		</repository>
 	</distributionManagement>
 
+	<description>This API has objective to help Java developers to use Dropbox API easily.
+
+Features
+
+- list all files easily listFiles()
+- change of folder with changeDropboxPath(String newpath)
+- get all feature dropbox api getClient()
+- search a file in your dropbox searchFile(String basePath, String query)</description>
 </project>
