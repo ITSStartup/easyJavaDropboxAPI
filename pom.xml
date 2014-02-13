@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>easyJavaDropboxAPI</artifactId>
-	<version>1.1.0</version>
+	<version>1.0.0</version>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -47,6 +47,12 @@
 					<altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.4.2</version>
+      </plugin>
 
 		</plugins>
 	</build>
@@ -69,6 +75,10 @@
 			<id>githubITS</id>
 			<name>GitHub ${project.artifactId} Repository</name>
 			<url>https://raw.github.com/ITSStartup/${project.artifactId}/mvn-repo</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
 		</repository>
 	</distributionManagement>
 
@@ -80,4 +90,9 @@ Features
 - change of folder with changeDropboxPath(String newpath)
 - get all feature dropbox api getClient()
 - search a file in your dropbox searchFile(String basePath, String query)</description>
+	<scm>
+		<url>git@github.com:ITSStartup/easyJavaDropboxAPI.git</url>
+		<connection>git@github.com:ITSStartup/easyJavaDropboxAPI.git</connection>
+		<developerConnection>git@github.com:ITSStartup/easyJavaDropboxAPI.git</developerConnection>
+	</scm>
 </project>
