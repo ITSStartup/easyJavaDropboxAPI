@@ -1,6 +1,7 @@
 package com.its.easyjavadropbox.api.impl;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +14,7 @@ import com.dropbox.core.DbxException;
 import com.dropbox.core.DbxRequestConfig;
 import com.dropbox.core.DbxThumbnailFormat;
 import com.dropbox.core.DbxThumbnailSize;
+import com.dropbox.core.DbxWriteMode;
 import com.its.easyjavadropbox.api.interfaces.EasyJavaDropBoxService;
 
 public class EasyJavaDropBoxServiceImpl implements EasyJavaDropBoxService{
@@ -78,5 +80,11 @@ public class EasyJavaDropBoxServiceImpl implements EasyJavaDropBoxService{
 		
 	}
 
+	@Override
+	public void saveToDropbox(String finalName, InputStream inputStreamContent)	throws DbxException, IOException {
+		final int numBytesUndefined = -1;
+		String finalNamePathFull = dropboxPath + finalName;
+		client.uploadFile(finalNamePathFull, DbxWriteMode.add(), numBytesUndefined,	inputStreamContent);
 
+	}
 }
