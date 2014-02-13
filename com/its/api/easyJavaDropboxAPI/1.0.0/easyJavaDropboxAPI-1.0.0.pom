@@ -28,7 +28,7 @@
 					</includes>
 					<repositoryName>easyJavaDropboxAPI</repositoryName>
 					<repositoryOwner>ITSStartup</repositoryOwner>
-					<merge>false</merge>
+					<merge>true</merge>
 				</configuration>
 				<executions>
 					<execution>
