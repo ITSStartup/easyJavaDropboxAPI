@@ -54,6 +54,9 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.4.2</version>
+				<configuration>
+				<developmentVersion>@{project.artifactId}</developmentVersion>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
