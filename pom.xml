@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>easyJavaDropboxAPI</artifactId>
-	<version>1.1.0</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -94,6 +94,5 @@ Some Features:
 		<url>scm:git:git@github.com:ITSStartup/easyJavaDropboxAPI.git</url>
 		<connection>scm:git:git@github.com:ITSStartup/easyJavaDropboxAPI.git</connection>
 		<developerConnection>scm:git:git@github.com:ITSStartup/easyJavaDropboxAPI.git</developerConnection>
-	  <tag>easyJavaDropboxAPI-1.1.0</tag>
   </scm>
 </project>
