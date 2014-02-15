@@ -8,74 +8,32 @@ http://dropbox.github.io/dropbox-sdk-java/api-docs/v1.7.x/
 
 https://www.dropbox.com/developers/
 
-###Introduction easyJavaDropboxAPI
+###easyJavaDropboxAPI
 --------------------
 This API has objective to help Java developers to use Dropbox API easily.
 
-###Features
+###v1.0.0
 --------------------
 
-* list all files easily **listFiles()**
+* list all files from your dropbox **listFiles()**
 * change of folder with **changeDropboxPath(String newpath)**
 * get all feature dropbox api **getClient()**
 * search a file in your dropbox **searchFile(String basePath, String query)**
 
-###Download example with Java Application 
---------------------
+###v1.1.0 
 
-* [easyJavaDropboxAPIExample] (https://github.com/ITSStartup/easyJavaDropboxAPIExample)
+* Permit upload from desktop to dropbox; 
+* New constructor EasyJavaDropBoxServiceImpl(String token). It is not required inform dropbox path. The default, will be "/".
+* 
 
-###Before use
---------------------
+###Wiki 
 
-1. You only need to generate a token for app. We have developed a web app for this objective check the following:
+Visit [wiki](https://github.com/ITSStartup/easyJavaDropboxAPI/wiki)/[pages](https://github.com/ITSStartup/easyJavaDropboxAPI/wiki/_pages) for more technical detail. 
 
-###Generate Token Live
---------------------
 
-[DropboxAPIWeb - Generate Token](http://apps.camilolopes.com.br/dpboxapiweb/)
+###Download .jar
 
-###Setup in your Java Project
---------------------
-
-####Maven Project
-
-* open pom.xml 
-
-* add the repository below
-
-```java
-<repositories>
-  <repository>
-        <id>easyJavaDropboxAPI</id>
-        <url>https://raw.github.com/ITSStartup/easyJavaDropboxAPI/mvn-repo</url>
-        <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
-        </snapshots>
-    </repository>
-</repositories>
-```
-
-* add the dependency 
-
-```xml
-<dependencies>
-		<dependency>
-			<groupId>com.its.api</groupId>
-			<artifactId>easyJavaDropboxAPI</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-	</dependencies>
-```
-
-	
-###Download .jar 
-
-* Version 1.0.0 [Click here] (https://github.com/ITSStartup/easyJavaDropboxAPI/blob/mvn-repo/com/its/api/easyJavaDropboxAPI/1.0.0/easyJavaDropboxAPI-1.0.0.jar?raw=true)
-
-* [Others Version] (https://github.com/ITSStartup/easyJavaDropboxAPI/tree/mvn-repo/com/its/api/easyJavaDropboxAPI)
-
+You can [download](https://github.com/ITSStartup/easyJavaDropboxAPI/wiki/Download-.jar) .jar of versions
 
 fork me and enjoy!!!
 
