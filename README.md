@@ -34,11 +34,7 @@ This API has objective to help Java developers to use Dropbox API easily.
 Visit [wiki](https://github.com/ITSStartup/easyJavaDropboxAPI/wiki)/[pages](https://github.com/ITSStartup/easyJavaDropboxAPI/wiki/_pages) for more technical detail. 
 
 
-###Download .jar
-
-You can [download](https://github.com/ITSStartup/easyJavaDropboxAPI/wiki/Download-.jar) .jar of versions
-
-fork me and enjoy!!!
+fork me and send pull request!!!
 
 
 
