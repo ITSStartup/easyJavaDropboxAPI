@@ -24,7 +24,7 @@ This API has objective to help Java developers to use Dropbox API easily.
 
 * Permit upload from desktop to dropbox; 
 * New constructor EasyJavaDropBoxServiceImpl(String token). It is not required inform dropbox path. The default, will be "/".
-* 
+
 
 ###Wiki 
 
