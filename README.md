@@ -37,7 +37,8 @@ Visit [wiki](https://github.com/ITSStartup/easyJavaDropboxAPI/wiki)/[pages](http
 
 ###Author 
 
-[Camilo Lopes](http://github.com/camilolopes)
+* [Camilo Lopes](http://github.com/camilolopes)
+* [Thiago Pinto] (http://github.com/trgpwild)
 
 
 fork me and send pull request!!!
