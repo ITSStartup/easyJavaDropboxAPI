@@ -49,7 +49,7 @@ public interface EasyJavaDropBoxService {
 	 * @param ident inform xs, s, m ,l , xl
 	 * @param fileName 
 	 * @param width
-	 * @param height
+	 * @param height;
 	 * @param outputStream
 	 * @throws IOException 
 	 * @throws DbxException 
@@ -65,5 +65,22 @@ public interface EasyJavaDropBoxService {
 	 * @throws IOException
 	 */
 	public void saveToDropbox(String finalName,InputStream inputStreamContent) throws DbxException,IOException;
+	
+	/**
+	 * Use this method only if the file is located in root "/" of your app
+	 * @param currentNameFile inform name of file that will be renamed e.g:file.txt
+	 * @param newNameFile inform new name of file e.g: myfile.txt
+	 * @throws DbxException is thrown if file is not found error 404
+	 */
+	public void renameFileRoot(String currentNameFile, String newNameFile) throws DbxException;
+	
+	/**
+	 * 
+	 * @param pathFolder inform the folder where the file is located e.g: /myfolder/
+	 * @param currentNameFile inform the name of file that will be renamed
+	 * @param newNameFile the name that will be renamed e.g: photous.png
+	 * @throws DbxException if the file is not found in the path informed exception is thrown.
+	 */
+	public void renameFile(String pathFolder, String currentNameFile, String newNameFile) throws DbxException;
 
 }

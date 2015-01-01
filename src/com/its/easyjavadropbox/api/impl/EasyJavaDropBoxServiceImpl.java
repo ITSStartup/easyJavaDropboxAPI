@@ -87,4 +87,17 @@ public class EasyJavaDropBoxServiceImpl implements EasyJavaDropBoxService{
 		client.uploadFile(finalNamePathFull, DbxWriteMode.add(), numBytesUndefined,	inputStreamContent);
 
 	}
+	@Override
+	public void renameFileRoot(String currentNameFile, String newNameFile) throws DbxException {		
+		String currentPathFile = root + currentNameFile ;
+		String newFile = root + newNameFile;
+		client.move(currentPathFile, newFile);
+		
+	}
+	@Override
+	public void renameFile(String pathFolder, String currentPathFile, String newNameFile) throws DbxException {
+		String fullCurrentPath = pathFolder + currentPathFile;
+		newNameFile = pathFolder + newNameFile;
+		client.move(fullCurrentPath, newNameFile);		
+	}
 }
